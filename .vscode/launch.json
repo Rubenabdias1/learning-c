@@ -9,7 +9,6 @@
       "args": [],
       "stopAtEntry": false,
       "preLaunchTask": "build debug",
-      "postDebugTask": "cleanup",
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,

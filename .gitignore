@@ -54,3 +54,4 @@ dkms.conf
 lib/
 obj/
 bin/
+debug/
