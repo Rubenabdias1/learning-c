@@ -54,4 +54,3 @@ dkms.conf
 lib/
 obj/
 bin/
-.vscode/

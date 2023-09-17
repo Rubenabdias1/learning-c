@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "mkdir debug",
+      "type": "shell",
+      "command": "mkdir",
+      "args": ["-p", "debug"],
+      "group": "build",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "build debug",
+      "type": "shell",
+      "command": "gcc",
+      "args": ["-g", "src/main.c", "-o", "debug/main"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["mkdir debug"]
+    },
+    {
+      "label": "cleanup",
+      "type": "shell",
+      "command": "rm",
+      "args": ["-r", "debug/"],
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "reveal": "silent"
+      }
+    }
+  ]
+}
