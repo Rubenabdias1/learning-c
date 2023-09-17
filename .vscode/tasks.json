@@ -21,7 +21,11 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": ["mkdir debug"]
+      "dependsOn": ["mkdir debug"],
+      "presentation": {
+        "echo": false,
+        "reveal": "silent"
+      }
     },
     {
       "label": "cleanup",
